@@ -1,3 +1,10 @@
 snippet example "Repro case example"
 This is a simple snippet example
 endsnippet
+
+snippet "m(u|o)?" "Test issue" br
+`!p snip.rv = 'public' if 'u' == match.group(1) else 'protected' if 'o' == match.group(1) else 'private'` function ${1:methodName}()
+{
+	${0}
+}
+endsnippet
